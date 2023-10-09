@@ -46,9 +46,10 @@ class WindowCls(QMainWindow, form_class) :
                                        + '.csv'
 
         print('expInfo', self.expInfoDict)
-
-        if not os.path.exists(output_path + self.expInfoDict['name'] + '/'):
-            os.makedirs(output_path + self.expInfoDict['name'] + '/')
+        if not os.path.exists(output_path + '/'):
+            os.makedirs(output_path + '/')
+        # if not os.path.exists(output_path + self.expInfoDict['name'] + '/'):
+        #     os.makedirs(output_path + self.expInfoDict['name'] + '/')
         # self.df.to_csv(self.expInfoDict['fileName'], mode='a', header=True, index=True)
         self.df.to_csv(self.expInfoDict['fileName'], mode='a', header=True, index=False)
 
