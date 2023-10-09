@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1301</width>
+    <height>1017</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>1261</width>
+     <height>941</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="expInfoGBox">
+      <property name="font">
+       <font>
+        <family>나눔스퀘어_ac</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Exp Info</string>
+      </property>
+      <widget class="QGroupBox" name="teInfoGBox">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>1221</width>
+         <height>871</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>나눔스퀘어_ac</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Test Info</string>
+       </property>
+       <widget class="QGroupBox" name="teGBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>591</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>문제지</string>
+        </property>
+        <widget class="QLabel" name="teLabel">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>571</width>
+           <height>561</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="teCntLabel">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>840</y>
+          <width>56</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>나눔스퀘어_ac</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>1 / 5</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="teExplainGBox_2">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>130</y>
+          <width>591</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>해설</string>
+        </property>
+        <widget class="QLabel" name="teExplainLabel_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>571</width>
+           <height>561</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="teSummaryGBox_3">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>1181</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="title">
+         <string>Summary</string>
+        </property>
+        <widget class="QLabel" name="teSumExplain">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>20</y>
+           <width>1041</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_teSumIcon">
+          <item row="0" column="1">
+           <widget class="QListView" name="icon_1"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QListView" name="icon_2"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListView" name="icon_4"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QListView" name="icon_3"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="teNextBtn">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>790</y>
+          <width>241</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>나눔스퀘어_ac Bold</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>다음문제</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tePrevBtn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>790</y>
+          <width>231</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>나눔스퀘어_ac Bold</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>이전문제</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>10</y>
+     <width>521</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔스퀘어_ac</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>[시선응답] 풀이결과 피드백</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
