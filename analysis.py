@@ -3,7 +3,8 @@ import pandas as pd
 import seaborn as sns
 
 # Create a DataFrame from the provided data
-df = pd.read_csv('output/population_30p.csv', delimiter=',')
+# df = pd.read_csv('output/population_30p.csv', delimiter=',')
+df = pd.read_csv('output/population_6p.csv', delimiter=',')
 
 # Calculate the average 'Immersion score'
 average_score = df['Immersion score'].mean()
