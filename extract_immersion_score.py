@@ -2,13 +2,14 @@ import pandas as pd
 import os
 import csv
 from sklearn.preprocessing import minmax_scale
+import numpy as np
 
 # D:\Edu_main\3. Immersion_score\total
 root_path = 'D:\\Edu_main\\3. Immersion_score\\total'
 score_dir_list = os.listdir(root_path)
 score_dir_list.sort()
 
-res_file = os.path.join('output', 'output_i_score_norm_v1.csv')
+res_file = os.path.join('output', 'output_i_score_norm_v2.csv')
 # res_col = ['No.', 'participant', 'type', 'exp_cnt', 'test', 'i_score_prompt']
 res_col = ['No.', 'participant', 'type', 'exp_cnt', 'test', 'i_score_prompt', 'norm_i_score_prompt']
 if not os.path.exists(res_file):
@@ -38,20 +39,32 @@ for p_dir in score_dir_list:
 
         # 각 행의 숫자를 더하고 평균값 구하기
         averages = []
-        norm_averages = [[]]
+        tmp_numbers = []
+        norm_averages = []
         for dline in data:
             row = dline.split(',')
             numbers = row[1:5]  # 2번째부터 5번째까지의 숫자 선택
             numbers = list(map(int, numbers))
+            tmp_numbers.append(numbers)
 
             total = sum(numbers)  # 숫자들의 합 구하기
             average = total / len(numbers)  # 평균값 계산
             averages.append(average)
 
-            norm_numbers = minmax_scale(numbers) -> 다시 작성필요 (한 사람 데이터 모두 모은 뒤에 minmax norm 필요 / 4회차 x 회차 당 3회 x 1회 당 점수 4개 평균)
-            norm_total = sum(norm_numbers)
-            norm_average = norm_total / len(norm_numbers)
-            norm_averages.append(norm_average)
+            # norm_numbers = minmax_scale(numbers) -> 다시 작성필요 (한 사람 데이터 모두 모은 뒤에 minmax norm 필요 / 4회차 x 회차 당 3회 x 1회 당 점수 4개 평균)
+            # norm_total = sum(norm_numbers)
+            # norm_average = norm_total / len(norm_numbers)
+            # norm_averages.append(norm_average)
+
+        # flatten = sum(tmp_numbers, [])
+        flatten = np.concatenate(tmp_numbers).tolist()
+        norm_numbers = minmax_scale(flatten)
+        reshape_norm_numbers = np.array(norm_numbers).reshape(3, 4)
+        for norm_num_row in reshape_norm_numbers:
+            total = sum(norm_num_row.tolist())
+            # total = sum(norm_num_row)
+            average = total / len(norm_num_row)
+            norm_averages.append(average)
 
         res_row_list = []
         # for avg in averages:
