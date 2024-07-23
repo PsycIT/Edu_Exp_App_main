@@ -21,6 +21,8 @@ class ThirdWindowCls(QDialog, QWidget, form_3rd_cls):
         self.cnfRBtn3.clicked.connect(self.cnfRadioBtn_clicked)
         self.cnfRBtn4.clicked.connect(self.cnfRadioBtn_clicked)
         self.cnfRBtn5.clicked.connect(self.cnfRadioBtn_clicked)
+        self.cnfRBtn6.clicked.connect(self.cnfRadioBtn_clicked)
+        self.cnfRBtn7.clicked.connect(self.cnfRadioBtn_clicked)
 
         self.cnfSubmitBtn.clicked.connect(self.cnfSubmitBtn_cicked)
 
@@ -51,6 +53,8 @@ class ThirdWindowCls(QDialog, QWidget, form_3rd_cls):
         elif self.cnfRBtn3.isChecked(): self.cnfAns = 3
         elif self.cnfRBtn4.isChecked(): self.cnfAns = 4
         elif self.cnfRBtn5.isChecked(): self.cnfAns = 5
+        elif self.cnfRBtn6.isChecked(): self.cnfAns = 6
+        elif self.cnfRBtn7.isChecked(): self.cnfAns = 7
 
         print("The selected condfidence value is ", self.cnfAns)
 
