@@ -161,7 +161,7 @@
      </font>
     </property>
     <property name="text">
-     <string>[시선응답] Lecture &amp; Test</string>
+     <string>[GPTalk] Lecture &amp; Test</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

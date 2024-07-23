@@ -389,7 +389,7 @@
     </font>
    </property>
    <property name="text">
-    <string>[시선응답] 풀이결과 피드백</string>
+    <string>[GPTalk] 풀이결과 피드백</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

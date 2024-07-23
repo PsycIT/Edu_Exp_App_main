@@ -236,7 +236,7 @@
     <widget class="QRadioButton" name="ansRBtn2">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>180</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -249,7 +249,7 @@
     <widget class="QRadioButton" name="ansRBtn3">
      <property name="geometry">
       <rect>
-       <x>250</x>
+       <x>290</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -262,7 +262,7 @@
     <widget class="QRadioButton" name="ansRBtn4">
      <property name="geometry">
       <rect>
-       <x>340</x>
+       <x>400</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -275,7 +275,7 @@
     <widget class="QRadioButton" name="ansRBtn5">
      <property name="geometry">
       <rect>
-       <x>430</x>
+       <x>510</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>

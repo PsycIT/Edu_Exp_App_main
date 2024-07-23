@@ -30,7 +30,7 @@
      </font>
     </property>
     <property name="text">
-     <string>[시선응답] 문제풀이 피드백</string>
+     <string>[GPTalk] 문제풀이 피드백</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

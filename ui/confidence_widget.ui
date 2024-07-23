@@ -90,7 +90,7 @@
     <widget class="QRadioButton" name="cnfRBtn1">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>30</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -128,7 +128,7 @@
     <widget class="QRadioButton" name="cnfRBtn3">
      <property name="geometry">
       <rect>
-       <x>250</x>
+       <x>230</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -147,7 +147,7 @@
     <widget class="QRadioButton" name="cnfRBtn4">
      <property name="geometry">
       <rect>
-       <x>350</x>
+       <x>320</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -166,7 +166,7 @@
     <widget class="QRadioButton" name="cnfRBtn5">
      <property name="geometry">
       <rect>
-       <x>450</x>
+       <x>420</x>
        <y>30</y>
        <width>31</width>
        <height>16</height>
@@ -185,7 +185,7 @@
     <widget class="QLabel" name="btn1Label">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>30</x>
        <y>60</y>
        <width>51</width>
        <height>16</height>
@@ -198,7 +198,7 @@
     <widget class="QLabel" name="btn5Label">
      <property name="geometry">
       <rect>
-       <x>440</x>
+       <x>610</x>
        <y>60</y>
        <width>51</width>
        <height>16</height>
@@ -206,6 +206,44 @@
      </property>
      <property name="text">
       <string>매우확신</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="cnfRBtn6">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>30</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어_ac</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="cnfRBtn7">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>30</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어_ac</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>7</string>
      </property>
     </widget>
    </widget>
