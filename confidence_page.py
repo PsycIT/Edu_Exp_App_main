@@ -6,7 +6,11 @@ from PyQt5 import uic
 import datetime as pydatetime
 import pandas as pd
 # from PIL import Image
-form_3rd_cls = uic.loadUiType("ui/confidence_widget.ui")[0]
+import os
+
+# form_3rd_cls = uic.loadUiType(BASE_DIR+"\\ui\\confidence_widget.ui")[0]
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+form_3rd_cls = uic.loadUiType(os.path.join(BASE_DIR, 'ui', 'confidence_widget.ui'))[0]
 
 class ThirdWindowCls(QDialog, QWidget, form_3rd_cls):
     def __init__(self, mainInfoDict, teCnt, parent_widget):

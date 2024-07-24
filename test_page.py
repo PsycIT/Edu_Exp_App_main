@@ -7,7 +7,10 @@ from PyQt5 import uic
 import datetime as pydatetime
 import pandas as pd
 # from PIL import Image
-form_2nd_cls = uic.loadUiType("ui/test_widget.ui")[0]
+# form_2nd_cls = uic.loadUiType("ui/test_widget.ui")[0]
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+form_2nd_cls = uic.loadUiType(os.path.join(BASE_DIR, 'ui', 'test_widget.ui'))[0]
+
 from confidence_page import ThirdWindowCls
 
 global ans_dict
@@ -178,19 +181,11 @@ class SecondWindowCls(QDialog, QWidget, form_2nd_cls):
 
     def set_ans_info(self):
         global ans_dict
-        ans_dict = {'1_1_1': 3, '1_1_2': 1, '1_1_3': 2, '1_1_4': 4,
-                    '1_2_1': 5, '1_2_2': 2, '1_2_3': 5, '1_2_4': 5,
-                    '1_3_1': 1, '1_3_2': 1, '1_3_3': 5, '1_3_4': 4,
+        ans_dict = {'1_1_1': 2, '1_1_2': 1, '1_1_3': 3, '1_1_4': 4,
+                    '1_2_1': 3, '1_2_2': 3, '1_2_3': 4, '1_2_4': 2,
+                    '1_3_1': 5, '1_3_2': 5, '1_3_3': 1, '1_3_4': 5,
 
-                    '2_1_1': 4, '2_1_2': 3, '2_1_3': 4, '2_1_4': 2,
-                    '2_2_1': 5, '2_2_2': 5, '2_2_3': 1, '2_2_4': 4,
-                    '2_3_1': 3, '2_3_2': 3, '2_3_3': 1, '2_3_4': 5,
-
-                    '3_1_1': 2, '3_1_2': 1, '3_1_3': 5, '3_1_4': 5,
-                    '3_2_1': 3, '3_2_2': 5, '3_2_3': 5, '3_2_4': 4,
-                    '3_3_1': 4, '3_3_2': 3, '3_3_3': 3, '3_3_4': 3,
-
-                    '4_1_1': 1, '4_1_2': 2, '4_1_3': 5, '4_1_4': 4,
-                    '4_2_1': 4, '4_2_2': 4, '4_2_3': 5, '4_2_4': 3,
-                    '4_3_1': 4, '4_3_2': 5, '4_3_3': 4, '4_3_4': 2
+                    '2_1_1': 3, '2_1_2': 4, '2_1_3': 2, '2_1_4': 3,
+                    '2_2_1': 1, '2_2_2': 5, '2_2_3': 5, '2_2_4': 3,
+                    '2_3_1': 5, '2_3_2': 5, '2_3_3': 1, '2_3_4': 4
                     }
