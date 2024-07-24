@@ -34,7 +34,7 @@
    <widget class="QLabel" name="nameLabel2">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>480</x>
       <y>20</y>
       <width>91</width>
       <height>16</height>
@@ -58,7 +58,7 @@
    <widget class="QLabel" name="expTypeLabel2">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>330</x>
       <y>20</y>
       <width>71</width>
       <height>20</height>
@@ -82,7 +82,7 @@
    <widget class="QLabel" name="expCntLabel2">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>650</x>
       <y>20</y>
       <width>41</width>
       <height>16</height>
@@ -103,7 +103,7 @@
    <widget class="QLabel" name="name2">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>440</x>
       <y>20</y>
       <width>31</width>
       <height>16</height>
@@ -122,7 +122,7 @@
    <widget class="QLabel" name="expCnt2">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>610</x>
       <y>20</y>
       <width>41</width>
       <height>16</height>
@@ -141,9 +141,9 @@
    <widget class="QLabel" name="expType2">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>260</x>
       <y>20</y>
-      <width>31</width>
+      <width>61</width>
       <height>16</height>
      </rect>
     </property>
@@ -154,7 +154,50 @@
      </font>
     </property>
     <property name="text">
-     <string>유형:</string>
+     <string>문제유형:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="expType2_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어_ac</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>실험유형:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="expTypeLabel2_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어 Bold</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Baseline</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
   </widget>

@@ -57,6 +57,7 @@ class SecondWindowCls(QDialog, QWidget, form_2nd_cls):
         self.nameLabel2.setText(self.infoDict['name'])
         self.expCntLabel2.setText(self.infoDict['expCnt'])
         self.expTypeLabel2.setText(self.infoDict['expType'])
+        self.expTypeLabel2_2.setText(self.infoDict['expType2'])
 
         self.idx4test = int(self.infoDict['expCnt'])
 
